@@ -8,6 +8,7 @@ Feature: Product Feature
     And - User enters correct password "<Password>"
     And - User click on Login button
 
+  @ProductFeature
   Scenario Outline: Verify that User able to add the single product to the cart
     Given User should be landed on the Product page
     And User selects Product and clicks on Add to Cart button "<Product>"
