@@ -100,5 +100,16 @@ public class ProductSteps {
     	Thread.sleep(3000);
     
     }
+    
+    @And("^User Click on Logout$")
+    public void user_click_on_logout() throws Throwable {
+    	
+    	WebElement menu = driver.findElement(By.xpath("//*[@id='react-burger-menu-btn']"));
+    	menu.click();
+    	WebElement logoutbtn = driver.findElement(By.xpath("//*[@id='logout_sidebar_link']"));
+    	logoutbtn.click();
+    	Thread.sleep(2000);
+
+    }
 
 }

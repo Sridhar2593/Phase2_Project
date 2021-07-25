@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		monochrome = true,
 		plugin = {"pretty", "html:target/cucumber-html","json:target/cucumber.json"},
 		features = "src/test/java/FeatureFiles",
-		//tags = {"@DataTable"},
-		tags = {"@NegativeLogin, @PositiveLogin, @DataTable, @ProductFeature"},//or condition and ~ symbol to exclude a tag
+		tags = {"@NegativeLogin, @PositiveLogin, @DataTable, @ProductFeature"},
+		//tags = {"@DataTable, @ProductFeature"},
 		glue = {"StepDefinitions"}
 		)
 

@@ -1,6 +1,8 @@
 package StepDefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.After;
@@ -19,7 +21,7 @@ public static WebDriver driver;
 	}
 	
 	@After
-	public void teardown() {
+	public void teardown() throws InterruptedException {
 		
 		driver.quit();
 	}

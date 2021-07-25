@@ -7,12 +7,14 @@ Feature: Product Feature
     When - User enters correct username "<UserName>"
     And - User enters correct password "<Password>"
     And - User click on Login button
+    
 
   @ProductFeature
   Scenario Outline: Verify that User able to add the single product to the cart
     Given User should be landed on the Product page
     And User selects Product and clicks on Add to Cart button "<Product>"
     Then User should able to see the product in My Cart
+    And User Click on Logout
 
     Examples: 
       | Product                 |
@@ -29,3 +31,5 @@ Feature: Product Feature
       | Sauce Labs Bike Light   |
       | Sauce Labs Fleece Jacket|
     Then User should able to see the product in My Cart
+    And User Click on Logout
+    
